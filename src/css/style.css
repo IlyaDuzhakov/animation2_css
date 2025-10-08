@@ -9,10 +9,13 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     /* display: none; */
     border: 2px solid #000;
     position: absolute;
     width: calc(50vw - 40px);
+    height: 600px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /* */
@@ -43,6 +46,65 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate; /* alternate - один раз в одну строну, второй раз в другую */
     cursor: pointer;
+}
+
+.title__text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.textarea {
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    width: calc(100% - 80px);
+    height: 400px;
+    padding: 20px;
+    border: 2px solid #bbb7b7;
+}
+
+
+.btn-click {
+     /* display: flex; */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    gap: 30px;
+    width: 180px;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: rgb(255, 40, 40);
+    border: none;
+    border-radius: 6px;
+    
+    
+}
+
+.btn-click:hover {
+    color: rgb(255, 255, 255);
+    background-color: #0193fb;
+}
+
+.btn-delete {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.btn-delete:hover {
+    color: rgb(0, 183, 255);
+    
 }
 
 @keyframes changesize {
