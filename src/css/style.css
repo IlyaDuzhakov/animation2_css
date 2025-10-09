@@ -74,7 +74,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     gap: 30px;
-    width: 180px;
+    width: calc(100% - 80px);
     height: 40px;
     font-size: 22px;
     font-weight: 700;
